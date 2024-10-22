@@ -1,19 +1,19 @@
-name: Scheduled Script Execution
+name: Scheduled Plugin Download
 
 on:
   schedule:
-    - cron: '0 19 * * *'  # 每天早上3点（上海时间）
-    - cron: '0 8 * * *'   # 每天下午4点（上海时间）
+    - cron: '0 19 * * *'  # 每天19:00 UTC（北京时间 03:00）
+    - cron: '0 8 * * *'    # 每天08:00 UTC（北京时间 16:00）
   push:
     paths:
-      - '.github/workflows/**'  # 监听 GitHub Actions 工作流文件的变化
-      - '*.py'     
+      - '.github/workflows/**'
+      - '*.py'
 
 permissions:
   contents: write
 
 jobs:
-  run-script:
+  download-plugins:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,26 +23,20 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.x'  # 使用 Python 版本 3.x
 
     - name: Install dependencies
       run: |
-        pip install requests
+        pip install requests  # 如果有其他依赖，添加到这里
 
-    - name: Run Python script
+    - name: Run the plugin download script
       run: |
-        set -e  # 在遇到错误时退出
-        python script.py
+        python script.py  # 将 your_script.py 替换为你的脚本文件名
 
-    - name: Move generated files to Surge folder
-      run: |
-        mkdir -p Loon
-        mv *.plugin Loon/
-
-    - name: Upload generated files to repository
+    - name: Commit and push downloaded plugins
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add Loon/*.plugin
-        git commit -m "Add generated plugin files"
+        git add Loon/*.plugin  # 添加 Loon 文件夹中的所有下载的插件文件
+        git commit -m "Add downloaded plugins" || echo "No changes to commit"
         git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/sooyaaabo/nsloon.git
