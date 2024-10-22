@@ -38,7 +38,7 @@ def download_plugins(links_and_titles):
         if response.status_code == 200:
             # 保存返回的结果为 title.plugin
             file_name = f"{title}.plugin"
-            with open(file_name, 'wb') as file:  # 使用 'wb' 以二进制模式写入
+            with open(file_name, 'w', encoding='utf-8') as file:
                 file.write(response.content)
             print(f"插件 {title} 已保存为 {file_name}")
         else:
