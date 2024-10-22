@@ -33,7 +33,7 @@ def extract_links_and_titles(md_file_path):
 # 直接下载插件并保存结果
 def download_plugins(links_and_titles):
     for title, plugin_link in links_and_titles:
-        url = plugin_link
+        url = f"plugin_link"
         response = requests.get(url)
         if response.status_code == 200:
             # 保存返回的结果为 title.plugin
