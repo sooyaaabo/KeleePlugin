@@ -66,8 +66,6 @@
 
 [闲鱼去广告](https://kelee.one/Tool/Loon/Plugin/FleaMarket_remove_ads.plugin) 2024-10-19 17:18:31
 
-[菜鸟去广告](https://kelee.one/Tool/Loon/Plugin/Cainiao_remove_ads.plugin) 2024-09-27 11:50:35
-
 [京东比价去广告](https://kelee.one/Tool/Loon/Plugin/JD_Price.plugin) 2024-09-18 16:14:34
 
 [京东去广告](https://kelee.one/Tool/Loon/Plugin/JD_remove_ads.plugin) 2024-04-21 15:41:21
