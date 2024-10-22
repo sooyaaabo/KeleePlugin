@@ -31,7 +31,12 @@ jobs:
 
     - name: Run the plugin download script
       run: |
-        python script.py  # 将 your_script.py 替换为你的脚本文件名
+        python your_script.py  # 将 your_script.py 替换为你的脚本文件名
+
+    - name: Move generated files to Loon folder
+      run: |
+        mkdir -p Loon
+        mv *.plugin Loon/  # 确保移动的是 .plugin 文件
 
     - name: Commit and push downloaded plugins
       run: |
