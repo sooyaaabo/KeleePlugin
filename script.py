@@ -39,7 +39,7 @@ def download_plugins(links_and_titles):
             # 保存返回的结果为 title.plugin
             file_name = f"{title}.plugin"
             with open(file_name, 'w', encoding='utf-8') as file:
-                file.write(response.content)
+                file.write(response.text)
             print(f"插件 {title} 已保存为 {file_name}")
         else:
             print(f"请求失败，插件 {title} 状态码: {response.status_code}")
