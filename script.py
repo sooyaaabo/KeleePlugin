@@ -17,8 +17,8 @@ def extract_links_and_titles(md_file_path):
         content = file.readlines()
 
     # 正则表达式匹配<td><a href="URL">标题</a></td>
-    pattern = re.compile(r'<td><a href="(https://www.nsloon.com/openloon/import\?plugin=https://kelee\.one/Tool/Loon/Plugin/([^/.]+\.plugin)">')
-
+    pattern = re.compile(r'<td><a href="https://www.nsloon.com/openloon/import\?plugin=(https://kelee\.one/Tool/Loon/Plugin/([^/.]+)\.plugin)">([^<]+)</a></td>')
+    
     results = []
 
     for line in content:
