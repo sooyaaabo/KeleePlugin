@@ -33,7 +33,7 @@ def extract_links_and_titles(md_file_path):
 # 直接下载插件并保存结果
 def download_plugins(links_and_titles):
     for title, plugin_link in links_and_titles:
-        url = f"http://kelee\.one/Tool/Loon/Plugin/{title}.plugin"
+        url = f"http://script.hub/file/_start_/{plugin_link}/_end_/Weibo_remove_ads.plugin?type=loon-plugin&target=loon-plugin&del=true"
         response = requests.get(url)
         if response.status_code == 200:
             # 保存返回的结果为 title.plugin
