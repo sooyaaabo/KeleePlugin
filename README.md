@@ -1,6 +1,6 @@
 # nsloon
 
-更新时间 2024-10-23 09:08
+更新时间 2024-10-25 22:48
 
 [拦截HTTPDNS](https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin) 2024-09-25 15:45:58
 
