@@ -80,4 +80,4 @@
 
 [IT之家去广告](https://kelee.one/Tool/Loon/Plugin/IThome_remove_ads.plugin) 2024-08-11 12:57:27
 
-[知乎去广告](https://kelee.one/Tool/Loon/Plugin/Zhihu_remove_ads.plugin) 2024-10-15 10:56:31
+[知乎去广告](https://kelee.one/Tool/Loon/Plugin/Zhihu_remove_ads.plugin) 2024-10-24 11:43:24
