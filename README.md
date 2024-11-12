@@ -1,6 +1,6 @@
 # nsloon
 
-更新时间 2024-11-10 11:31
+更新时间 2024-11-12 08:37
 
 [拦截HTTPDNS](https://kelee.one/Tool/Loon/Plugin/Block_HTTPDNS.plugin) 2024-11-05 10:03:15
 
@@ -58,7 +58,7 @@
 
 [YouTube双语字幕](https://kelee.one/Tool/Loon/Plugin/YouTubeSubtitlesTranslation.plugin) 2024-09-24 23:06:40
 
-[YouTube去广告](https://kelee.one/Tool/Loon/Plugin/YouTube_remove_ads.plugin) 2024-06-11 21:59:22
+[YouTube去广告](https://kelee.one/Tool/Loon/Plugin/YouTube_remove_ads.plugin) 2024-11-11 23:56:20
 
 [萤石云视频去广告](https://kelee.one/Tool/Loon/Plugin/VideoGo_remove_ads.plugin) 2024-07-10 02:10:56
 
