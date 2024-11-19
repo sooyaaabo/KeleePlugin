@@ -1,5 +1,6 @@
 ## Kelee Plugin Link
-### https://github.com/luestr/ProxyResource/blob/main/README.md
+
+### 原作者仓库链接：https://github.com/luestr/ProxyResource/blob/main/README.md
 
 [广告平台拦截器](https://kelee.one/Tool/Loon/Plugin/BlockAdvertisers.plugin)
 
